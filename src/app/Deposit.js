@@ -41,6 +41,7 @@ function Deposit({ onClose }) {
         },
         body: JSON.stringify({ name, email, txid, amount }),
       });
+      alert(`You Have Successfully Deposited  ${amount} $`);
       if (res.ok) {
         router.push("/");
       } else {
